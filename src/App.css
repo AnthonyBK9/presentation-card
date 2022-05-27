@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,300;1,400;1,500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 576px;
+  margin: 0 auto;
+  border: 1px solid #21213A;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 2px 2px 8px #000;
+  padding: 15px;
+  margin: 0 auto;
+  min-width: 310px;
+}
+
+.card-header {
+  display: flex;
+  gap: 5px;
+}
+
+.card-header i {
+  font-size: 60px;
+}
+
+.card-title {
+  text-align: end;
+  font-style: italic;
+  margin: 20px 0 6px;
+}
+
+.button-f {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-card {
+    padding: 8px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    outline: 0;
+    box-shadow: 2px 2px 4px grey;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-card i {
+  font-size: 20px;
+}
