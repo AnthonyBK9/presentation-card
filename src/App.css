@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  transition: all .6s;
 }
 
 .container {
@@ -60,4 +61,18 @@ body {
 
 .btn-card i {
   font-size: 20px;
+}
+
+@media (max-width: 546px) {
+  
+  .card {
+    max-width: 20%;
+  }
+
+}
+
+@media (max-width: 338px) {
+  .card {
+    max-width: 10%;
+  }
 }

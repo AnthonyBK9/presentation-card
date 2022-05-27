@@ -1,12 +1,12 @@
 import React from 'react'
+import Author from './Author'
+import Button from './Button'
 
 const QuoteBox = ({userRandom, colorRandom, result}) => {
     const appStyle = {
         color: colorRandom
       }
-    const buttonStyle = {
-        backgroundColor: colorRandom
-    }
+    
   return (
     <div className="container">
         <article className="card" style={appStyle}>
@@ -14,11 +14,13 @@ const QuoteBox = ({userRandom, colorRandom, result}) => {
                 <i className="fa-solid fa-quote-left"></i>
                 <p className="card-text">{userRandom.quote}</p>
             </div>
-            
-            <h2 className="card-title">{userRandom.author}</h2>
-            <div className="button-f">
-                <button className="btn-card" style={buttonStyle} onClick={result}><i className="fa-solid fa-chevron-right"></i></button>
-            </div>
+            <Author 
+              userRandom={userRandom}
+            />
+            <Button 
+              colorRandom={colorRandom}
+              result={result}
+            />
         </article>
     </div>
   )

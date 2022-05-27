@@ -13,8 +13,9 @@ function App() {
 
   const indexColorRandom = createNumberRandow(colors);
   const indexUserRandom = createNumberRandow(users);
+  const indexColorPrimary = createNumberRandow(colors);
 
-  const [colorRandom, setColorRandom] = useState('#039A88');
+  const [colorRandom, setColorRandom] = useState(colors[indexColorPrimary]);
   const [userRandom, setUserRandom] = useState(users[indexUserRandom]);
  
   const result = () => {
